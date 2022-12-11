@@ -22,6 +22,21 @@ const menuItems: MenuItem[] = [
         icon: 'alert-circle-outline',
         component: 'AlertScreen'
     },
+    {
+        name: 'Inputs',
+        icon: 'document-text-outline',
+        component: 'TextInputScreen'
+    },
+    {
+        name: 'Refresh',
+        icon: 'refresh-outline',
+        component: 'Pulltorefresh'
+    },
+    {
+        name: 'Section List',
+        icon: 'list-outline',
+        component: 'SectionListScreen'
+    },
 ]
 
 export default menuItems
