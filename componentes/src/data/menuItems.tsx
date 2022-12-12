@@ -37,6 +37,16 @@ const menuItems: MenuItem[] = [
         icon: 'list-outline',
         component: 'SectionListScreen'
     },
+    {
+        name: 'Modals',
+        icon: 'copy-outline',
+        component: 'ModalScreen'
+    },
+    {
+        name: 'InfiniteScroll',
+        icon: 'download-outline',
+        component: 'InfiniteScroll'
+    },
 ]
 
 export default menuItems

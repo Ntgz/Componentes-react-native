@@ -8,6 +8,8 @@ import AlertScreen from '../screens/AlertScreen';
 import TextInputScreen from '../screens/TextInput';
 import PullToRefresh from '../screens/pullToRefresh';
 import SectionListScreen from '../screens/sectionListScreen';
+import ModalScreen from '../screens/ModalScreen';
+import InfiniteScroll from '../screens/InfiniteScroll';
 
 const Stack = createNativeStackNavigator();
 
@@ -27,6 +29,8 @@ const Navigation = () => {
             <Stack.Screen name="TextInputScreen" component={TextInputScreen}/>
             <Stack.Screen name="Pulltorefresh" component={PullToRefresh}/>
             <Stack.Screen name="SectionListScreen" component={SectionListScreen}/>
+            <Stack.Screen name="ModalScreen" component={ModalScreen}/>
+            <Stack.Screen name="InfiniteScroll" component={InfiniteScroll}/>
         </Stack.Navigator>
     )
 }
