@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, Button, ActivityIndicator, Dimensions,FlatList,
 import { MenuItem } from '../interfaces/appInterfaces';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { useNavigation } from '@react-navigation/native';
+import { useTheme } from '@react-navigation/native'
 
 interface Props {
     menuItem: MenuItem
@@ -11,6 +12,7 @@ interface Props {
 const FlatListMenuItem = ({ menuItem }: Props) => {
 
     const navigation = useNavigation();
+    // const { colors } = useTheme();
 
     return (
         <TouchableOpacity
@@ -23,7 +25,12 @@ const FlatListMenuItem = ({ menuItem }: Props) => {
                     color ="gray"
                     size={15}
                 />
-                <Text>{ menuItem.name }</Text>
+                <Text
+                    style={{
+                        ...styles.itemText,
+                        // color: colors.text
+                    }}
+                >{ menuItem.name }</Text>
                 <View style={{ flex:1 }}/>
                 <Ionicons
                     name="chevron-forward-outline"
